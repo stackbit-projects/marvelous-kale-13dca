@@ -1,0 +1,31 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+nodeVersion: '12'
+publishDir: public
+pagesDir: content
+models:
+  content:
+    type: page
+    label: Content
+    match: '**/*'
+    exclude:
+      - index.mdx
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: metaTitle
+        label: Meta Title
+      - type: string
+        name: metaDescription
+        label: Meta Description
+  content_1:
+    type: page
+    label: Content 1
+    match:
+      - index.mdx
+    fields:
+      - type: string
+        name: title
+        label: Title
